@@ -1,0 +1,9 @@
+.custom-no-application-found {
+  text-align: center;
+  font-size: 1.5rem; /* Police plus grande */
+  font-weight: bold; /* Police grasse */
+  height: 100px; /* Hauteur augmentée */
+  background-color: #f2f2f2; /* Couleur de fond */
+  border: 1px solid #ddd; /* Bordure */
+  line-height: 100px; /* Alignement vertical du texte */
+}

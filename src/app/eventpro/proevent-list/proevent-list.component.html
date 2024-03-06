@@ -1,0 +1,25 @@
+<table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+  <thead class="text-xs text-gray-700 uppercase bg-gray-100 ">
+  <tr>
+
+    <th scope="col" class="px-6 py-3 text-center">Title</th>
+    <th scope="col" class="px-6 py-3 text-center">Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngIf="proEvents.length === 0">
+    <td colspan="6" class="text-center text-lg font-bold py-5 bg-gray-100 border border-gray-300">No application found</td>
+  </tr>
+  <tr *ngFor="let proEvent of proEvents" class="bg-white  border-b ">
+
+    <td class="px-6 py-4 text-center">{{ proEvent.Title }}</td>
+
+    <td class="text-center">
+      
+    </td>
+      <button class="bg-red-500 hover:bg-red-300 text-white px-4 py-2 rounded-lg shadow ml-2" (click)="onDelete(proEvent)">
+        Delete
+      </button>
+  </tr>
+  </tbody>
+</table>

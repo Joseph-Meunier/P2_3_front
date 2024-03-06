@@ -1,0 +1,19 @@
+
+<div class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center">
+  <div class="bg-white rounded shadow-lg">
+    <div class="flex flex-col items-center pb-10 p-8">
+      <div class="mb-8 flex justify-center">
+        <i class="fa-solid fa-circle-exclamation" style="color: #a855f7; font-size: 48px;"></i>
+      </div>
+      <div class="text-2xl font-medium mb-4">Delete this application ?</div>
+      <div class="flex items-center justify-between pt-4">
+        <!-- Added margin right to the first button -->
+        <button class="bg-purple-500 hover:bg-purple-300 w-24 text-white px-4 py-2 rounded-lg shadow mr-4" (click)="confirm()">Ok</button>
+        <!-- The second button can remain unchanged, as margin is applied to the first button -->
+        <button class="bg-white hover:bg-stone-100  w-24 hover:text-slate-400 border-2 border-slate-300 py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-150" (click)="close()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
